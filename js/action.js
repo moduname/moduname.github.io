@@ -38,7 +38,7 @@ $(document).ready(function(){
 	$(".sc3").fadeOut(0);
 	$(".sc4").fadeOut(0);
 	
-	//1. 발음오행 클릭 시
+	//1. 오행의 길흉 클릭 시
 	$(".serv_btn1").click(function(){
 		$(".serv_btn1 a").addClass("greenOn");
 		$(".serv_btn2 a").removeClass("greenOn");
@@ -50,7 +50,7 @@ $(document).ready(function(){
 		$(".sc4").fadeOut(0);
 	});
 	
-	//2. 자원오행 클릭 시
+	//2. 81수리 클릭 시
 	$(".serv_btn2").click(function(){
 		$(".serv_btn1 a").removeClass("greenOn");
 		$(".serv_btn2 a").addClass("greenOn");
@@ -62,7 +62,7 @@ $(document).ready(function(){
 		$(".sc4").fadeOut(0);
 	});
 	
-	//3. 수리오행 클릭 시
+	//3. 만세력 클릭 시
 	$(".serv_btn3").click(function(){
 		$(".serv_btn1 a").removeClass("greenOn");
 		$(".serv_btn2 a").removeClass("greenOn");
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		$(".sc4").fadeOut(0);
 	});
 	
-	//4. 음양오행 클릭 시
+	//4. 인명용 한자 클릭 시
 	$(".serv_btn4").click(function(){
 		$(".serv_btn1 a").removeClass("greenOn");
 		$(".serv_btn2 a").removeClass("greenOn");
