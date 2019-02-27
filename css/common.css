@@ -14,6 +14,14 @@ button:hover{cursor:pointer;}
 .fl{float:left;}
 .fr{float:right;}
 .cb:after{content:""; display:block; clear:both;}
+.info_text{
+	display: inline-block; 
+	transform: translate3d(0px, 20px, 0px); 
+	opacity: 0; 
+	transition: transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0s, opacity 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0s;
+	-webkit-transition: transform 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0s, opacity 0.7s cubic-bezier(0.0, 0.0, 0.2, 1) 0s;
+}
+.width_100{width: 100%; float: left;}
 
 .grn{color:#216915;}
 .grn2{color:#63c12f;}
