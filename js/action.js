@@ -33,128 +33,51 @@ $(document).ready(function(){
 	
 	
 	//===== "복잡하고 어려운 작명, 모두네임은 쉽습니다" 영역 탭메뉴 =====
-	$(".sc1").fadeIn(0); // 초기값 설정
+	// 초기값 설정
+	$(".sc1").fadeIn(0); 
 	$(".sc2").fadeOut(0);
 	$(".sc3").fadeOut(0);
 	$(".sc4").fadeOut(0);
-	
+	$(".screen>img").eq(0).siblings().css({left:"324px"});
+
 	//1. 오행의 길흉 클릭 시
-	$(".serv_btn1").click(function(){
-		$(".serv_btn1 a").addClass("greenOn");
-		$(".serv_btn2 a").removeClass("greenOn");
-		$(".serv_btn3 a").removeClass("greenOn");
-		$(".serv_btn4 a").removeClass("greenOn");
-		$(".sc1").fadeIn(0);
-		$(".sc2").fadeOut(0);
-		$(".sc3").fadeOut(0);
-		$(".sc4").fadeOut(0);
-	});
+	gotoSlider(1);
 	
 	//2. 81수리 클릭 시
-	$(".serv_btn2").click(function(){
-		$(".serv_btn1 a").removeClass("greenOn");
-		$(".serv_btn2 a").addClass("greenOn");
-		$(".serv_btn3 a").removeClass("greenOn");
-		$(".serv_btn4 a").removeClass("greenOn");
-		$(".sc1").fadeOut(0);
-		$(".sc2").fadeIn(0);
-		$(".sc3").fadeOut(0);
-		$(".sc4").fadeOut(0);
-	});
+	gotoSlider(2);
 	
 	//3. 만세력 클릭 시
-	$(".serv_btn3").click(function(){
-		$(".serv_btn1 a").removeClass("greenOn");
-		$(".serv_btn2 a").removeClass("greenOn");
-		$(".serv_btn3 a").addClass("greenOn");
-		$(".serv_btn4 a").removeClass("greenOn");
-		$(".sc1").fadeOut(0);
-		$(".sc2").fadeOut(0);
-		$(".sc3").fadeIn(0);
-		$(".sc4").fadeOut(0);
-	});
+	gotoSlider(3);
 	
 	//4. 인명용 한자 클릭 시
-	$(".serv_btn4").click(function(){
-		$(".serv_btn1 a").removeClass("greenOn");
-		$(".serv_btn2 a").removeClass("greenOn");
-		$(".serv_btn3 a").removeClass("greenOn");
-		$(".serv_btn4 a").addClass("greenOn");
-		$(".sc1").fadeOut(0);
-		$(".sc2").fadeOut(0);
-		$(".sc3").fadeOut(0);
-		$(".sc4").fadeIn(0);
-	});
-	
+	gotoSlider(4);
+
 	
 	//===== "작명인증서" 영역 탭메뉴 =====
-	$(".fc1").fadeIn(0); // 초기값 설정
+ 	// 초기값 설정
+	$(".fc1").fadeIn(0);
 	$(".fc2").fadeOut(0);
 	$(".fc3").fadeOut(0);
 	
 	//1. 작명인증서(PDF용) 클릭 시
-	$(".cert_btn1").click(function(){
-		$(".cert_btn1 a").addClass("whiteOn");
-		$(".cert_btn2 a").removeClass("whiteOn");
-		$(".cert_btn3 a").removeClass("whiteOn");
-		$(".fc1").fadeIn(0);
-		$(".fc2").fadeOut(0);
-		$(".fc3").fadeOut(0);
-	});
+	gotoObjChange(1);
 	
 	//2. 이메일 작명인증서 클릭 시
-	$(".cert_btn2").click(function(){
-		$(".cert_btn1 a").removeClass("whiteOn");
-		$(".cert_btn2 a").addClass("whiteOn");
-		$(".cert_btn3 a").removeClass("whiteOn");
-		$(".fc1").fadeOut(0);
-		$(".fc2").fadeIn(0);
-		$(".fc3").fadeOut(0);
-	});
+	gotoObjChange(2);
 	
 	//3. 고급 케이스 작명인증서 클릭 시
-	$(".cert_btn3").click(function(){
-		$(".cert_btn1 a").removeClass("whiteOn");
-		$(".cert_btn2 a").removeClass("whiteOn");
-		$(".cert_btn3 a").addClass("whiteOn");
-		$(".fc1").fadeOut(0);
-		$(".fc2").fadeOut(0);
-		$(".fc3").fadeIn(0);
-	});
+	gotoObjChange(3);
 	
 	
 	//===== sns로고 마우스오버 시 색상 변경 =====
 	//1. 페이스북
-	$("#footer_right>ul>li:nth-child(1)>a>img").mouseover(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns1_off.png","sns1_on.png"));
-	});
-	$("#footer_right>ul>li:nth-child(1)>a>img").mouseleave(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns1_on.png","sns1_off.png"));
-	});
-
+	snsColorChange(1);
 	//2. 인스타그램
-	$("#footer_right>ul>li:nth-child(2)>a>img").mouseover(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns2_off.png","sns2_on.png"));
-	});
-	$("#footer_right>ul>li:nth-child(2)>a>img").mouseleave(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns2_on.png","sns2_off.png"));
-	});
-	
+	snsColorChange(2);
 	//3. 네이버 블로그
-	$("#footer_right>ul>li:nth-child(3)>a>img").mouseover(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns3_off.png","sns3_on.png"));
-	});
-	$("#footer_right>ul>li:nth-child(3)>a>img").mouseleave(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns3_on.png","sns3_off.png"));
-	});
-	
+	snsColorChange(3);
 	//4. 유튜브
-	$("#footer_right>ul>li:nth-child(4)>a>img").mouseover(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns4_off.png","sns4_on.png"));
-	});
-	$("#footer_right>ul>li:nth-child(4)>a>img").mouseleave(function(){
-		$(this).attr('src',$(this).attr('src').replace("sns4_on.png","sns4_off.png"));
-	});
+	snsColorChange(4);
 
 
 	var page_scroll_check = new Array(0/*0*/,0/*1*/,0/*2*/,0/*3*/,0/*4*/,0/*5*/,0/*6*/,0/*7*/);
@@ -176,7 +99,13 @@ $(document).ready(function(){
 
 });
 function infoTextAni(page_num , delay_time, page_int, scroll_offset, page_scroll_check){
+	/* [START] 초기값 */
 	var padding = 400;
+	/* [END] 초기값 */
+	/*
+		현재 스크롤 위치가 지정 객체(page_num)가 보이는 위치에 있을 경우
+		.page_num 안의 .info_text 를 찾아서 delay_time * (n + (++1)) 만큼 하나씩 실행 된다.
+	*/
 	if($(page_num).offset().top + padding  < scroll_offset && page_scroll_check[page_int] == 0){
 		var delay = 1;
 		$(page_num+" .info_text").each(function(){
@@ -188,4 +117,56 @@ function infoTextAni(page_num , delay_time, page_int, scroll_offset, page_scroll
 		});
 		page_scroll_check[page_int] = 1;
 	}
+}
+
+function snsColorChange(num){
+	$("#footer_right>ul>li:nth-child("+num+")>a>img").mouseover(function(){
+		$(this).attr('src',$(this).attr('src').replace("sns"+num+"_off.png","sns"+num+"_on.png"));
+	});
+	$("#footer_right>ul>li:nth-child("+num+")>a>img").mouseleave(function(){
+		$(this).attr('src',$(this).attr('src').replace("sns"+num+"_on.png","sns"+num+"_off.png"));
+	});
+}
+
+/* 휴대폰 슬라이더 함수 */
+function gotoSlider(num){
+	/* [START] 초기값 */
+	var btn = $(".serv_btn"+num+" a");
+	var btn_other = $(".serv_btn"+num).siblings().find("a");
+	var des = $(".sc"+num);
+	var des_other = $(".sc"+num).siblings();
+	var this_obj = $(".screen>img").eq(num-1);
+	var other_obj = $(".screen>img").eq(num-1).siblings();
+	/* [END] 초기값 */
+
+	$(".serv_btn"+num).click(function(){
+
+		btn.addClass("greenOn");
+		des.fadeIn(0);
+		btn_other.removeClass("greenOn");
+		des_other.fadeOut(0);
+
+		this_obj.css({"z-index":"1"}).animate({left:"57px"},450,"easeOutCirc");
+		other_obj.css({"z-index":"0"});
+		setTimeout(function(){
+			this_obj.css({left:"57px","z-index":"0"});
+			other_obj.css({"left":"324px"});
+		},450)
+	});
+}
+
+function gotoObjChange(num){
+	/* [START] 초기값 */
+	var this_obj = $(".cert_btn"+num+" a");
+	var other_obj = $(".cert_btn"+num).siblings("li").find("a");
+
+	var this_fc = $(".fc"+num);
+	var other_fc = $(".fc"+num).siblings("img");
+	/* [END] 초기값 */
+	$(".cert_btn"+num).click(function(){
+		this_obj.addClass("whiteOn");
+		other_obj.removeClass("whiteOn");
+		this_fc.fadeIn(0);
+		other_fc.fadeOut(0);
+	});
 }

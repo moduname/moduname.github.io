@@ -39,7 +39,7 @@ button:hover{cursor:pointer;}
 				nav{width:50%;}
 					#nav_wrap{width:100%;}
 						#nav_wrap>ul{width:100%;}
-						#nav_wrap>ul>li{width:20%; text-align:center; font-weight:bold;}
+						#nav_wrap>ul>li{width:25%; text-align:center; font-weight:bold;}
 						#nav_wrap>ul>li a{color:#fff;}
 						#nav_wrap>ul>li>ul>li>a{color:#222;}
 						#nav_wrap>ul>li a:hover{opacity:0.8; transition:all 0.4s;}
@@ -53,7 +53,7 @@ button:hover{cursor:pointer;}
 
 #wrap{width:70%; background:lightgray; margin:0 auto;}
 	/* 각 영역 대제목 */
-	.title{font-size:56px; line-height:130%; margin-bottom:20px;}
+	.title{font-size:50px; line-height:130%; margin-bottom:20px;}
 	p{line-height:150%;}
 	section{}
 		section>div{overflow:hidden;}
@@ -82,7 +82,11 @@ button:hover{cursor:pointer;}
 				#service_nav>ul>li>a:hover{color:#63c12f;}
 				#service_nav ul li .greenOn{color:#63c12f; font-weight:bold; border-bottom:1.2px solid #63c12f;}
 				#service_con{margin-top:40px;}
+					#service_con>p{}
 			#two_right{width:50%; padding-left:160px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+				#phone_bg{width:380px; height:674px; background:url("../images/two_bg.png") center center; background-size:cover;}
+				.screen{width:324px; height:575px; overflow:hidden; position:relative;}
+				.screen>img{ position:absolute; left:57px; top:99px;  z-index:10;}
 			
 		#three{height:460px;}
 			#three_left{width:50%; padding-top:60px;}
