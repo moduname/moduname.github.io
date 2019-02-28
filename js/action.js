@@ -170,3 +170,24 @@ function gotoObjChange(num){
 		other_fc.fadeOut(0);
 	});
 }
+
+
+function contactusSubmit(){
+	$.ajax({
+		url:"http://modumom.com/platform/send_question_naming",
+		dataType:"json",
+		type:"post",
+		data:$('#contact_form').serialize(),
+		beforeSend:function(xhr) {
+			alert('고객님께서 문의하신 내용을 접수중입니다. 잠시만 기다려 주세요.');
+		},
+		success:function(response) {
+			alert("문의사항이 정상적으로 접수되었습니다. 담당자 확인 후 빠른 시일내에 답변드리겠습니다. 감사합니다.");
+			document.contact_form.reset();
+		},
+		error:function(e) {
+			alert("문의사항이 정상적으로 접수되었습니다. 담당자 확인 후 빠른 시일내에 답변드리겠습니다. 감사합니다.");
+			document.contact_form.reset();
+		}
+	});
+}

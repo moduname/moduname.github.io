@@ -262,7 +262,7 @@
 	
 	#seven{height:auto;}
 	#seven>#contact{width:95%; margin:0 auto;}
-	#seven>#contact>div,#seven>#contact>p{width:100%;}
+	#seven #contact>div,#seven #contact>p{width:100%;}
 	#seven #contact .policy{width:100%;}
 	#seven #submit{width:92%;}
 	
