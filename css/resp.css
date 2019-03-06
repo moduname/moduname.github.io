@@ -1,4 +1,4 @@
-@media screen and (min-width:1680px) and (max-width:1980px){
+@media screen and (min-width:1680px) and (max-width:2180px){
 	#footer_left{width:78%;}
 	#footer_right{width:22%;}
 }
@@ -10,7 +10,6 @@
 	.pad2{width:91%;}
 	#footer_wrap{width:91%;}
 	
-	#four{height:auto; padding-bottom:0px;}
 }
 
 
@@ -64,7 +63,7 @@
 	
 	#four{height:700px; padding-bottom:0px;}
 	
-	#five{height:500px;}
+	#five{height:510px;}
 	#five .cir~p{display:none;}
 	
 	#six{height:490px;}
@@ -114,17 +113,17 @@
 	#three_right>img{width:98%;}
 	
 	#four{height:auto; padding-bottom:0px;}
-	#four_nav{width:auto; margin-top:0px;}
-	#four_nav li{width:100%;}
+	#four_nav{width:/*auto*/97%; margin-top:0px;}
+	/*#four_nav li{width:100%;}*/
 	#four_con{width:95%; margin:0 auto; margin-top:10px;}
 	#four_con>img{width:100%;}
 	#four_con>p{margin-bottom:10px;}
 	
-	#five{height:420px;}
+	#five{height:390px;}
 	#five>ul{margin-top:20px;}
 	#five .cir{width:140px; height:140px;}
 	#five .cir~h3{font-size:1.12em; line-height:120%;}
-	#five .cir~p{}
+	#five .cir~p{display:none;/*margin-top:10px;*/}
 	
 	#six{height:490px;}
 	
@@ -140,7 +139,7 @@
 	#topBtn{bottom:10px; right:10px;}
 }
 
-@media screen and (min-width:680px) and (max-width:789px){
+@media screen and (min-width:690px) and (max-width:789px){
 	/* 컨텐츠 영역 너비 */
 	#header_wrap{width:95%;}
 	#wrap{width:95%;}
@@ -170,22 +169,23 @@
 	/*#two_left{width:100%; padding-top:0px;}*/
 	#service{margin-top:0px;}
 	#service_nav{}
-	/*#service_con{display:none;}*/
+	#service_con{/*display:none;*/ margin-top:20px;}
 	#two_right{/*width:100%;*/ padding-left:0px; text-align:center;}
-	#two_right img{width:83%;}
+	#two_right #phone_bg{width:100%;}
+	.screen img{left:42px;}
 	
 	#three{height:auto;}
 	#three_left, #three_right{width:100%; padding-top:0px; text-align:center;}
 	#three_right>img{width:98%;}
 	
 	#four{height:auto; padding-bottom:0px;}
-	#four_nav{width:auto; margin-top:0px;}
-	#four_nav li{width:100%;}
+	#four_nav{width:97%; margin-top:0px;}
+	/*#four_nav li{width:100%;}*/
 	#four_con{width:95%; margin:0 auto; margin-top:10px;}
 	#four_con>img{width:100%;}
 	#four_con>p{margin-bottom:10px;}
 	
-	#five{height:340px;}
+	#five{height:370px;}
 	#five>ul{margin-top:20px;}
 	#five .cir{width:110px; height:110px;}
 	#five .cir~h3{font-size:1em; line-height:120%;}
@@ -205,7 +205,7 @@
 	#topBtn{bottom:10px; right:10px;}
 }
 
-@media screen and (max-width:679px){
+@media screen and (max-width:689px){
 	/* 컨텐츠 영역 너비 */
 	#header_wrap{width:95%;}
 	#wrap{width:95%;}
@@ -236,10 +236,11 @@
 	#two_left{width:100%; padding-top:0px;}
 	#service{margin-top:0px;}
 	#service_nav{width:320px; text-align:center; margin:0 auto; font-size:0.9em;}
-	#service_con{display:block;}
-	#two_right{width:100%; text-align:center; padding-left:0px;}
+	#service_con{display:none;}
+	#two_right{width:100%; text-align:center; padding-left:0px; margin-right:19px;}
 	#phone_bg{margin:0 auto;}
-	#two_right img{width:83%;}
+	/*#two_right #phone_bg{width:100%;}*/
+	.screen>img{left:57px;}
 	
 	#three{height:auto;}
 	#three_left, #three_right{width:100%; padding-top:0px; text-align:center;}
@@ -252,7 +253,7 @@
 	#four_con>img{width:100%;}
 	#four_con>p{margin-bottom:10px;}
 	
-	#five{height:390px;}
+	#five{height:370px;}
 	#five>ul{margin-top:20px;}
 	#five .cir{width:90px; height:90px;}
 	#five .cir~h3{font-size:1em; line-height:120%;}
@@ -261,7 +262,7 @@
 	#six{height:470px;}
 	
 	#seven{height:auto;}
-	#seven>#contact{width:95%; margin:0 auto;}
+	#seven #contact{width:95%; margin:0 auto;}
 	#seven #contact>div,#seven #contact>p{width:100%;}
 	#seven #contact .policy{width:100%;}
 	#seven #submit{width:92%;}
@@ -270,6 +271,4 @@
 	#footer_right{width:100%; padding-top:14px;}
 	
 	#topBtn{bottom:10px; right:10px;}
-	
-	
 }

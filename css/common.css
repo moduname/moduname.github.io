@@ -84,22 +84,22 @@ button:hover{cursor:pointer;}
 				#service_con{margin-top:40px;}
 					#service_con>p{}
 			#two_right{width:50%; padding-left:160px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
-				#phone_bg{width:380px; height:674px; background:url("../images/two_bg.png") center center; background-size:cover;}
-				.screen{width:324px; height:575px; overflow:hidden; position:relative;}
+				#phone_bg{width:380px/*77%*/; height:674px; background:url("../images/two_bg.png") center center; background-size:cover;}
+				.screen{width:324px; height:575px; overflow:hidden; position:relative; /*margin:0 auto;*/}
 				.screen>img{ position:absolute; left:57px; top:99px;  z-index:10;}
 			
 		#three{height:460px;}
 			#three_left{width:50%; padding-top:60px;}
 			#three_right{width:50%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; padding-top:30px;}
 			
-		#four{height:800px; background:#63c12f; color:#fff; text-align:center; padding-bottom:0px;}
-			#four_nav{width:600px; margin:0 auto; margin-top:40px;}
+		#four{height:/*800*/760px; background:#63c12f; color:#fff; text-align:center; padding-bottom:0px;}
+			#four_nav{width:600px; margin:0 auto; margin-top:20px;}
 				#four_nav li{width:33.3%;}
 				#four_nav li>a{color:#fff; opacity:0.8; transition:all 0.4s;}
 				#four_nav ul li>a:hover{opacity:1;}
 				#four_nav ul li .whiteOn{color:#fff; font-weight:bold; border-bottom:1.2px solid #fff; opacity:1;}
 			#four_con{margin:30px 0;}
-				#four_con>p{margin-bottom:50px;}
+				#four_con>p{margin-bottom:30px; display:block !important;}
 				
 		#five{height:630px; text-align:center;}
 			#five>ul{width:100%; margin-top:40px; text-align:center;}

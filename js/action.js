@@ -162,6 +162,7 @@ function gotoObjChange(num){
 
 	var this_fc = $(".fc"+num);
 	var other_fc = $(".fc"+num).siblings("img");
+	
 	/* [END] 초기값 */
 	$(".cert_btn"+num).click(function(){
 		this_obj.addClass("whiteOn");
@@ -170,7 +171,6 @@ function gotoObjChange(num){
 		other_fc.fadeOut(0);
 	});
 }
-
 
 function contactusSubmit(){
 	$.ajax({
