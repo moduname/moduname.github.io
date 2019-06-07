@@ -87,10 +87,9 @@
 	#under{padding-top:250px;}
 	
 	.modulogo{width:120px;}
-	#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
-	#nav_wrap>ul>li:nth-child(2){float:right;}
+	#nav_wrap>ul>li:nth-child(0),#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(2),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
 	#nav_wrap>ul{content:""; display:block; clear:both;}
-	/*#nav_wrap>ul>li:nth-child(5){float:right; margin-right:4%;}*/
+	#nav_wrap>ul>li:nth-child(5){float:right; margin-right:4%;}
 	
 	#one{height:auto; text-align:center;}
 	/*#one_left{width:100%; padding-left:0px;}*/
@@ -152,8 +151,7 @@
 	.mainbtn{width:140px; font-size:0.9em;}
 	
 	.modulogo{width:120px;}
-	#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
-	#nav_wrap>ul>li:nth-child(2){float:right;}
+	#nav_wrap>ul>li:nth-child(0),#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(2),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
 	#nav_wrap>ul{content:""; display:block; clear:both;}
 	#nav_wrap>ul>li:nth-child(5){float:right; margin-right:12px;}
 	
@@ -219,8 +217,7 @@
 	.mainbtn{width:140px; font-size:0.92em;}
 	
 	.modulogo{width:120px;}
-	#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
-	#nav_wrap>ul>li:nth-child(2){float:right; width:40%;}
+	#nav_wrap>ul>li:nth-child(0),#nav_wrap>ul>li:nth-child(1),#nav_wrap>ul>li:nth-child(2),#nav_wrap>ul>li:nth-child(3),#nav_wrap>ul>li:nth-child(4){display:none;}
 	#nav_wrap>ul{content:""; display:block; clear:both;}
 	#nav_wrap>ul>li:nth-child(5){float:right; margin-right:22px;}
 	
@@ -256,7 +253,7 @@
 	#four_con>img{width:100%;}
 	#four_con>p{margin-bottom:10px;}
 	
-	#five{height:370px;}
+	#five{height:390px;}
 	#five>ul{margin-top:20px;}
 	#five .cir{width:90px; height:90px;}
 	#five .cir~h3{font-size:1em; line-height:120%;}
@@ -265,8 +262,8 @@
 	#six{height:470px;}
 	
 	#seven{height:auto;}
-	#seven>#contact{width:95%; margin:0 auto;}
-	#seven>#contact>div,#seven>#contact>p{width:100%;}
+	#seven #contact{width:95%; margin:0 auto;}
+	#seven #contact>div,#seven #contact>p{width:100%;}
 	#seven #contact .policy{width:100%;}
 	#seven #submit{width:92%;}
 	

@@ -146,12 +146,12 @@ function gotoSlider(num){
 		btn_other.removeClass("greenOn");
 		des_other.fadeOut(0);
 
-		this_obj.css({"z-index":"1"}).animate({left:"57px"},200);
+		this_obj.css({"z-index":"1"}).animate({left:"57px"},450,"easeOutCirc");
 		other_obj.css({"z-index":"0"});
 		setTimeout(function(){
 			this_obj.css({left:"57px","z-index":"0"});
 			other_obj.css({"left":"324px"});
-		},200)
+		},450)
 	});
 }
 
@@ -161,7 +161,7 @@ function gotoObjChange(num){
 	var other_obj = $(".cert_btn"+num).siblings("li").find("a");
 
 	var this_fc = $(".fc"+num);
-	var other_fc = $(".fc"+num).siblings();
+	var other_fc = $(".fc"+num).siblings("img");
 	
 	/* [END] 초기값 */
 	$(".cert_btn"+num).click(function(){
@@ -169,5 +169,25 @@ function gotoObjChange(num){
 		other_obj.removeClass("whiteOn");
 		this_fc.fadeIn(0);
 		other_fc.fadeOut(0);
+	});
+}
+
+function contactusSubmit(){
+	$.ajax({
+		url:"http://modumom.com/platform/send_question_naming",
+		dataType:"json",
+		type:"post",
+		data:$('#contact_form').serialize(),
+		beforeSend:function(xhr) {
+			alert('고객님께서 문의하신 내용을 접수중입니다. 잠시만 기다려 주세요.');
+		},
+		success:function(response) {
+			alert("문의사항이 정상적으로 접수되었습니다. 담당자 확인 후 빠른 시일내에 답변드리겠습니다. 감사합니다.");
+			document.contact_form.reset();
+		},
+		error:function(e) {
+			alert("문의사항이 정상적으로 접수되었습니다. 담당자 확인 후 빠른 시일내에 답변드리겠습니다. 감사합니다.");
+			document.contact_form.reset();
+		}
 	});
 }

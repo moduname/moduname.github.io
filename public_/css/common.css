@@ -4,6 +4,8 @@
 *{margin:0; padding:0;}
 body{font-size:17px; line-height:200%;
 	 font-family: "NanumBarunGothic";
+	 /* font-family: 'Noto Sans KR', sans-serif; */
+	 /* font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
 	 height:auto; background:#fff; color:#111;}
 
 a{text-decoration:none; color:#333;}
@@ -114,7 +116,7 @@ button:hover{cursor:pointer;}
 		#six{height:590px; text-align:center; background:#f1f1f1;}
 			
 		
-		#seven{height:900px; background:#63c12f/*fd4142*/; color:#fff; text-align:center;}
+		#seven{height:900px; background:#63c12f; color:#fff; text-align:center;}
 			#seven #contact{text-align:left; width:70%; margin:0 auto;  font-size:0.92em;}
 			#seven #contact>div{width:600px; margin:0 auto;}
 			#seven #contact>div~p{font-size:0.95em;}
@@ -123,7 +125,7 @@ button:hover{cursor:pointer;}
 
 			#seven #contact .policy{text-align:justify; width:600px; margin:0 auto;}
 			#seven #contact .policy~p{width:70%; margin:0 auto; margin-top:28px; text-align:center;}
-			#seven #submit{width:40%; height:50px; background:#fff; /*color:#650203;*/ font-weight:bold; font-size:16px; border-radius:30px; box-shadow:2px 2px 10px #41891a/*650203*/; transition:all 0.5s; margin:0 auto;}
+			#seven #submit{width:40%; height:50px; background:#fff; /*color:#63c12f;*/ font-weight:bold; font-size:16px; border-radius:30px; box-shadow:2px 2px 10px #41891a; transition:all 0.5s; margin:0 auto;}
 			#seven #checkbox{border:0; background:#fff;}
 			#seven #submit:hover{cursor:pointer; opacity:0.9;}
 	
