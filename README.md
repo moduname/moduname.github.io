@@ -4,3 +4,5 @@
 ## Firebase
 > Hosting
 - ModuName(modunamefirebase)
+
+`moduname.co.kr` > `moducorp.co.kr`
