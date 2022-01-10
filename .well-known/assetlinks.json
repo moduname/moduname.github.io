@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.ftnc.mobileapp.moduname",
+    "sha256_cert_fingerprints":
+      ["7A:38:F4:E0:B9:FD:64:F8:E5:D5:FB:6E:9C:90:A6:CD:60:6E:6F:38:49:02:51:C8:19:50:7D:4D:ED:F8:96:96"]
+  }
+}]
