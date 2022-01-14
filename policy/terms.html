@@ -2,10 +2,26 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>서비스 이용약관</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script>
+        const query = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(query.entries());
+        const version = params.version || '20161005';
+        const converter = new showdown.Converter();
+        fetch(`${location.origin}/policy/archive/terms/${version}.md`).then(function (res) {
+            var text = res.ok ? res.text() : "# Not Found";
+            return text;
+        }).then(function (markdown) {
+            var html = converter.makeHtml(markdown);
+            document.getElementById('app').innerHTML = html;
+        }).catch(function (error) {
+            console.error(error);
+        });
+    </script>
 </head>
 <body>
-    <object type="application/pdf" data="https://drive.google.com/file/d/11bTycquXYZyKRC3uBJ3_enAIn0cn6Hu2/preview" width="100%" style="height: 100vh;"></object>
+    <div id="app" width="100%" style="height: 100vh;"></div>
 </body>
 </html>
