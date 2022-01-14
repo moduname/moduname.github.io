@@ -8,7 +8,7 @@
     <script>
         const query = new URLSearchParams(window.location.search);
         const params = Object.fromEntries(query.entries());
-        const version = params.version || '20161005';
+        const version = params.version || '20220101';
         const converter = new showdown.Converter();
         fetch(`${location.origin}/policy/archive/privacy/${version}.md`).then(function (res) {
             var text = res.ok ? res.text() : "# Not Found";
