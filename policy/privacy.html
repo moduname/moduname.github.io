@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>개인정보 처리방침</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script>
+        const query = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(query.entries());
+        const version = params.version || '20161005';
+        const converter = new showdown.Converter();
+        fetch(`${location.origin}/policy/archive/privacy/${version}.md`).then(function (res) {
+            var text = res.ok ? res.text() : "# Not Found";
+            return text;
+        }).then(function (markdown) {
+            var html = converter.makeHtml(markdown);
+            document.getElementById('app').innerHTML = html;
+        }).catch(function (error) {
+            console.error(error);
+        });
+    </script>
 </head>
 <body>
-    <object type="application/pdf" data="https://drive.google.com/file/d/1CwH2njg3-lc99-Q_PfDuphlMwG946G4z/preview" width="100%" style="height: 100vh;"></object>
+    <div id="app" width="100%" style="height: 100vh;"></div>
 </body>
 </html>
